@@ -1,0 +1,105 @@
+.converter
+    margin: auto
+    margin-top: 200px
+    min-height: 300px
+    width: 500px
+
+    &-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        padding: 30px
+        min-height: 300px
+        width: 500px
+        background-color: #999999
+        border-radius: 5px
+        border: 3px black
+        box-shadow: 3px 3px 0px 0px black
+    
+    &__header
+        width: 360px
+        height: 30px
+        background-color: #fff
+        box-shadow: 3px 3px 0px 0px black
+        text-align: center
+        font-size: 18px
+        line-height: 30px
+        transition: 0.5s all
+        overflow: hide
+        &:hover
+            font-size: 20px
+            background-color: green
+            transform: rotateX(25deg), skewY(25deg)
+            width: 250px
+            margin-bottom: 10px
+            border-radius: 3px
+            
+
+    &__input-block
+        display: block
+    &__input-box
+        width: 250px
+        height: 29px
+        box-shadow: 3px 3px 0px 0px black
+        text-align: center
+        border: none
+        transition: 0.2s all
+        outline: none
+        &[type=number]:focus
+            width: 247px
+            height: 26px
+            border: inset 2.5px green
+            font-weight: 700
+
+    
+    &_choice-switcher
+        margin-top: 3px
+        position: relative
+        &-selector
+            width: 360px
+            height: 31px
+            cursor: pointer
+            border-radius: 0
+            box-shadow: none
+            box-shadow: 3px 3px 0px 0px black
+            background-color: #fff
+            border: none
+    &__btn
+        width: 102px
+        height: 31px
+        border-radius: 0%
+        text-align: center 
+        cursor: pointer
+        border: 0
+        box-shadow: 3px 3px 0px 0px black
+        background-color: #fff
+        transition: 0.5s all
+        &:hover
+            background-color: green
+            font-weight: 700
+            border-radius: 3px
+            
+    &__output
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: flex-start
+        background-color: #fff
+        width: 360px
+        min-height: 100px
+        align-self: flex-start
+        margin: 3px auto
+        box-shadow: 3px 3px 0px 0px black
+        text-align: left
+        padding: auto
+        span
+            font-weight: 700
+            text-decoration: underline green
+        p
+            word-wrap: break-word
+            margin-left: 5px
+        &__text-wrapper
+            width: 360px
+            margin: auto

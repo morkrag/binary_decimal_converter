@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Binary/Decimal converter</title>
+</head>
+<body>
+    <section class="converter">
+        <div class="container">
+            <div class="converter-wrapper">
+                <h2 class="converter__header">Binary/Decimal converter</h2>
+                <div class="converter__input-block">
+                    <input type="number" id="input-number" class="converter__input-box">
+                    <button type="button"  onclick="converter()" class="converter__btn"> 
+                        Convert
+                    </button> 
+                </div>
+                <div class="converter_choice-switcher">
+                    <select name="convertation" id="convertation-type" class="converter_choice-switcher-selector">
+                        <option value="biToDec">Convert binary number to decimal</option>
+                        <option value="decToBi">Convert decimal number to binary</option>
+                    </select>
+                </div>
+                <div class="converter__output">
+                    <div class="converter__output__text-wrapper">
+                        <p id="input-message"></p>
+                        <p id="output-message"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
